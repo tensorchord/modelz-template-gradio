@@ -8,4 +8,4 @@ def greet(name):
 
 demo = gr.Interface(fn=greet, inputs="text", outputs="text")
 
-demo.launch(server_port=os.environ.get("GRADIO_PORT", 8080))
+demo.launch(server_port=os.environ.get("GRADIO_SERVER_PORT", 8080))
